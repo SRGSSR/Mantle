@@ -14,7 +14,7 @@ let package = Package(
     products: [
         .library(
             name: "Mantle",
-            targets: ["Mantle"]
+            targets: ["Mantle", "extobjc"]
         )
     ],
     targets: [
@@ -24,13 +24,11 @@ let package = Package(
             path: "Mantle",
             exclude: [
                 "extobjc"
-            ],
-            publicHeadersPath: "."
+            ]
         ),
         .target(
             name: "extobjc",
-            path: "Mantle/extobjc",
-            publicHeadersPath: "."
+            path: "Mantle/extobjc"
         )
     ]
 )
