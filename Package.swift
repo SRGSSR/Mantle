@@ -16,10 +16,6 @@ let package = Package(
             name: "Mantle",
             targets: ["Mantle"]),
     ],
-    dependencies: [
-//        .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.5"),
-//        .package(url: "https://github.com/Quick/Quick.git", from: "2.2.0"),
-    ],
     targets: [
         .target(
             name: "Mantle",
@@ -34,10 +30,5 @@ let package = Package(
             dependencies: [],
             path: "Mantle/extobjc",
             publicHeadersPath: ".")
-// Note: this is commented out as SPM doesn't currently support ObjC/Swift mixed targets
-//        .testTarget(
-//            name: "MantleTests",
-//            dependencies: ["Mantle", "Nimble", "Quick"],
-//            path: "MantleTests"),
     ]
 )
