@@ -32,4 +32,4 @@ FOUNDATION_EXPORT const unsigned char MantleVersionString[];
 #import <Mantle/NSValueTransformer+MTLInversionAdditions.h>
 #import <Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h>
 
-#endif /* MANTLE_SPM */
+#endif /* SWIFT_PACKAGE */
