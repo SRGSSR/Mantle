@@ -14,7 +14,11 @@ let package = Package(
     products: [
         .library(
             name: "Mantle",
-            targets: ["Mantle"]),
+            targets: ["Mantle"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/Quick/Nimble.git", from: "8.1.2"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "2.2.1")
     ],
     targets: [
         .target(
@@ -29,6 +33,15 @@ let package = Package(
             name: "extobjc",
             dependencies: [],
             path: "Mantle/extobjc",
-            publicHeadersPath: ".")
+            publicHeadersPath: "."),
+        .testTarget(
+            name: "MantleTests",
+            dependencies: ["Mantle", "Nimble", "Quick"],
+            path: "MantleTests",
+            cSettings: [
+                .define("SWIFT_SWIFT3_OBJC_INFERENCE", to: "On"),
+                .define("SWIFT_VERSION", to: "4.2"),
+            ])
+        
     ]
 )
