@@ -9,9 +9,9 @@
 //  See the LICENSE file for more information.
 //
 
-#import <Mantle/Mantle.h>
-#import <Nimble/Nimble.h>
-#import <Quick/Quick.h>
+@import Mantle;
+@import Nimble;
+@import Quick;
 
 #import "NSObject+MTLComparisonAdditions.h"
 

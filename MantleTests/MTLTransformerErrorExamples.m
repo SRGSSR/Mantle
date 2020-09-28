@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 GitHub. All rights reserved.
 //
 
-#import <Quick/Quick.h>
-#import <Nimble/Nimble.h>
+@import Quick;
+@import Nimble;
 #import "MTLTransformerErrorExamples.h"
 
 #import "MTLTransformerErrorHandling.h"

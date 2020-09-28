@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 GitHub. All rights reserved.
 //
 
-#import <Mantle/Mantle.h>
-#import <Nimble/Nimble.h>
-#import <Quick/Quick.h>
+@import Mantle;
+@import Nimble;
+@import Quick;
 
 #import "MTLTestModel.h"
 
